@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="jquery.js"></script>
-    <script> src="client.js"</script>
+    <script src="client.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
     <title>j-query-salary-calculator</title>
@@ -16,29 +16,25 @@
     </header>
     <div>
         <h2>Add Employee</h2>
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="ID">
-        <input type="text" placeholder="title">
-        <input type="text" placeholder="Annual Salary">
-        <button>Submit</button>
+        <input id="firstNameInput" type="text" placeholder="First Name">
+        <input id="lastNameInput" type="text" placeholder="Last Name">
+        <input id="idInput" type="number" placeholder="ID">
+        <input id="titleInput" type="text" placeholder="Title">
+        <input id="annualSalaryInput" type="number" placeholder="Annual Salary">
+        <button id="submitButton">Submit</button>
     </div>
     <div>
         <h2>Employees</h2>
-        <table>
+        <table class="table">
             <thead>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>ID</th>
                 <th>Title</th>
                 <th>Annual Salary</th>
-                <th>delete column</th>
+                <th></th>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Jen</td>
-                </tr>
-            </tbody>
+            <tbody id="newEmployeeInput"></tbody>
         </table>
     </div>
     <div>
