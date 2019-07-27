@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="bootstrap.css">
     <title>j-query-salary-calculator</title>
 </head>
-<body>
-    <header>
-        <h1>Salary Calculator</h1>
+<body class>
+    <header class="container">
+        <h1 class="jumbotron">Salary Calculator</h1>
     </header>
-    <div>
-        <h2>Add Employee</h2>
+    <div class="container">
+        <h4>Add Employee</h4>
         <input id="firstNameInput" type="text" placeholder="First Name">
         <input id="lastNameInput" type="text" placeholder="Last Name">
         <input id="idInput" type="number" placeholder="ID">
@@ -23,8 +23,8 @@
         <input id="annualSalaryInput" type="number" placeholder="Annual Salary">
         <button id="submitButton">Submit</button>
     </div>
-    <div>
-        <h2>Employees</h2>
+    <div class="container">
+        <h4>Employees</h4>
         <table class="table">
             <thead>
                 <th>First Name</th>
@@ -34,11 +34,11 @@
                 <th>Annual Salary</th>
                 <th></th>
             </thead>
-            <tbody id="newEmployeeInput"></tbody>
+            <tbody id="tBody"></tbody>
         </table>
     </div>
-    <div>
-        <h2>Total Monthly: </h2>
+    <div class="container">
+        <h4>Total Monthly: $ <span id="totalMonthly"></span></h4>
     </div>
     
 </body>
